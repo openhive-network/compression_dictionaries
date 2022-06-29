@@ -32,7 +32,7 @@ and store it in a separate file.  Run something like:
 
 ```
 rm -r /tmp/blockchain
-compress_block_log --enable-zstd=no --enable-brotli=no --enable-deflate=no --input-block-log=/storage1/datadir/blockchain --output-block-log=/tmp/blockchain --starting-block-number=60000000 --block-count=1000000 --dump-raw-blocks=/tmp/blocks
+compress_block_log --decompress --input-block-log=/storage1/datadir/blockchain --output-block-log=/tmp/blockchain --starting-block-number=60000000 --block-count=1000000 --dump-raw-blocks=/tmp/blocks
 ```
 
 This will create one million files on your disk, each containing a block.  They'll be laid out with one directory per
