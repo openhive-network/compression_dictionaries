@@ -1,6 +1,6 @@
 SET(ZSTD_DICTIONARY_C_FILES)
 
-FIND_PROGRAM(RESOURCE_COMPILER xxd)
+FIND_PROGRAM(RESOURCE_COMPILER xxd REQUIRED)
 
 set(DICTIONARY_DECLARATIONS "#include <hive/chain/raw_compression_dictionaries.hpp>\nextern \"C\"\n{")
 set(MAP_INITIALIZATION "namespace hive { namespace chain {\n\
