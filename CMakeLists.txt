@@ -6,7 +6,7 @@ set(DICTIONARY_DECLARATIONS "#include <hive/chain/raw_compression_dictionaries.h
 set(MAP_INITIALIZATION "namespace hive { namespace chain {\n\
 const std::map<uint8_t, raw_dictionary_info> raw_dictionaries = {")
 
-FOREACH(DICTIONARY_NUM RANGE 74)
+FOREACH(DICTIONARY_NUM RANGE 75)
   STRING(LENGTH "${DICTIONARY_NUM}" DICTIONARY_NUM_LEN)
   MATH(EXPR LEADING_ZEROS_NEEDED "2 - ${DICTIONARY_NUM_LEN}")
   SET(DICTIONARY_NUM_STRING "${DICTIONARY_NUM}")
